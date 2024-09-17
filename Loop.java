@@ -12,14 +12,14 @@ public class Loop {
         }
         int c=21;
         do{
-            System.out.println(c);
+            System.out.println(c); 
             c++;
         }
         while(c<=30);
         
     // }
 
-// Sum of First N Numbers: Write a loop to find the sum of the first N natural numbers.
+// Sum of First N Numbers: Write a loop to find the sum of the first N natural number.
         
           int sum=0;
           for(int k=0;k<=10;k++)
