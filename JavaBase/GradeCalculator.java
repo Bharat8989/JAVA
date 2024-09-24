@@ -1,3 +1,4 @@
+package JavaBase;
 // Write a program to print the grade based on marks:
 
 // 90 and above: A

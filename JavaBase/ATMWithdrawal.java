@@ -1,3 +1,4 @@
+package JavaBase;
 // Write a program that simulates an ATM, where a user enters the amount to withdraw. The program checks:
 
 // The amount should be divisible by 100.
