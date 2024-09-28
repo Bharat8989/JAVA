@@ -24,7 +24,7 @@ public class Runnable_creations {
         Mythread thread1=new Mythread();
         MyRunnable myrunnable=new MyRunnable();
         Thread thread2=new Thread(myrunnable);
-        thread1.start();
+        thread1.start(); 
         thread2.start();
 
     }
