@@ -8,7 +8,8 @@ public class HelloWorldFrame extends JFrame {
         setSize(300, 100);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
-    }
+    }   
+    //what 
 
     public static void main(String[] args) {
         new HelloWorldFrame(); 
