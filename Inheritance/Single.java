@@ -1,24 +1,28 @@
-package Inheritance;
-// package Inheritance;
+// single inheritance 
+// simple programs
+class Animal
+{
+    void show()
+    {
+        System.out.println("show method run");
 
-// package Inheritance;
+    }
 
-// package Inheritance;
+}
+class Dog extends Animal{
+    void show2()
+    {
+        System.out.println("show2 method run");
 
-
-// package Inheritance;
-// Single Inheritance:
-// Problem: Create a class Animal with a method makeSound(). Derive another class Dog that overrides makeSound() to print "Bark". Create objects of both classes and call their makeSound() methods.
-
-
-class Animal {
-    void makeSound(){
-        System.out.println("bark");
     }
 }
-public class Single extends Animal{
-    public static void main(final String[] args) {
-        final Single obj =new Single();
-        obj.makeSound();
+class Single{
+    public static void main(String args[])
+    {
+        System.out.println("single method run");
+        Dog king=new Dog();
+        king.show();
+        king.show2();
+
     }
-} 
+}
