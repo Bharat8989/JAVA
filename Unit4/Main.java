@@ -17,7 +17,8 @@ public class Main {
             System.out.println("File copied");
         }
         catch(IOException e) {
-            e.printStackTrace();
+            e.printStackTrace();   
+            // try and catch
         }
     }
 }
