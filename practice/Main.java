@@ -1,20 +1,38 @@
-import java.util.Scanner;
+// control statement 
+//there are two types of control statement i)looping statement ii)conditional statement 
+// i)for loop statement 
+// ii)while loop 
+// examples
 class Main{
-    public static void main(String args[])
-    {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("enter the Name ,Roll , Mark and Grade");
+    void run(){
+        for(int i=0;i<=10;i++){
+            System.out.println(i);
+        }
         
-        String name=sc.nextLine();
-        int Roll=sc.nextInt();
-        double Mark=sc.nextLong();
-        char Grade=sc.next().charAt(0);
-
-
-
-        System.out.println("name:"+name);
-        System.out.println("roll:"+Roll);
-        System.out.println("mark:"+Mark);
-        System.out.println("grade:"+Grade);
     }
+    void whileLoop()
+    {
+        int j=1;
+        while(j<=6){
+        System.out.println(j);
+        j++;
+    }
+    void doWhileLoop(){
+        int k=20;
+        do{
+           
+            System.out.println(k);
+            k++;
+        }
+        while(k <=30);
+    }
+    }
+    public static void main(String args[])
+        {
+            Main k=new Main();
+            k.run();
+            k.whileLoop();
+            k.dowhileLoop();
+            System.out.println("hello Main class ");
+        }
 }
