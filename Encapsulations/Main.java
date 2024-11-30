@@ -1,19 +1,26 @@
-class Person {
-    private String CarColor;
+class Main1 {
+    // Private field
+    private String name;
 
-    public void SetColor(String Color) {
-        CarColor = Color;
+    // Setter method
+    public void setName(String n) {
+        name = n; // Assign the value to the private field
     }
 
-    public String GetColor() {
-        return CarColor;
+    // Getter method
+    public String getName() {
+        return name; // Return the value of the private field
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Person pro = new Person();
-        pro.SetColor("blue");
-        System.out.println("Set color is: " + pro.GetColor());
+        Main1 kk = new Main1();
+
+        // Setting the name
+        kk.setName("Bharat");
+
+        // Getting and displaying the name
+        System.out.println("Your name is: " + kk.getName());
     }
 }
