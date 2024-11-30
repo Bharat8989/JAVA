@@ -1,37 +1,34 @@
-//Hierarchical inheritance 
+// 4th multi 
 
-class A {
-    public void showA()
-    {
-        System.out.println( "A method run ");
-
-    }
-}
-class B extends A{
-    public void showB(){
-        System.out.println("B method run");
-
-    }
-} 
-class C extends A{
-     public void ShowC()
-     {
-        System.out.println("C method run");
-     }
-    // System.out.println("main method run");
+interface A {
+    void run();
 
 }
-class Main 
+interface B
 {
+    void bark();
+}
+class Animal 
+{
+    void eat()
+{
+    System.out.println("animal class run");
+}
+} 
+class Main extends Animal implements A, B{
+    public void run(){
+        System.out.println("A method run ");
+
+    }
+    public void bark()
+    {
+        System.out.println("B method run ");
+    }
     public static void main(String args[])
     {
-        C kk=new C();
-        kk.showA();
-        // kk.showB();
-        kk.ShowC();
-        B kkk=new B();
-        System.out.println("call the B method ");
-        kkk.showA();
-        kkk.showB();
+         Main kk=new Main();
+         kk.run();
+         kk.bark();
+         kk.eat();
     }
 }
