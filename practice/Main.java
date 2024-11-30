@@ -1,31 +1,37 @@
-//ii)Inheritance 
-// inheritance there are five types of inheritance 
-// single multilevel Hierarchical
-//single inheritance it single it inheritance one class to another class 
-//using the  extends keyword
-//examples
+//Hierarchical inheritance 
+
 class A {
-    void show()
+    public void showA()
     {
-        System.out.println("show method run");
+        System.out.println( "A method run ");
 
     }
-
 }
 class B extends A{
-    void showB()
-    {
-        System.out.println("B method is run ");
+    public void showB(){
+        System.out.println("B method run");
 
     }
+} 
+class C extends A{
+     public void ShowC()
+     {
+        System.out.println("C method run");
+     }
+    // System.out.println("main method run");
 
 }
-class Main {
+class Main 
+{
     public static void main(String args[])
     {
-        B kk=new B();
-        kk.show();
-        kk.showB();
-        System.out.println("both method are single inheritance");
+        C kk=new C();
+        kk.showA();
+        // kk.showB();
+        kk.ShowC();
+        B kkk=new B();
+        System.out.println("call the B method ");
+        kkk.showA();
+        kkk.showB();
     }
 }
