@@ -1,26 +1,22 @@
-// conditional statement 
-// if if else if else if and last is the nested if 
+// oops stand for object oriented programming language 
+// i)class and object 
+// class is blueprint or template
+class Main
+{
+    String name ="bharat";
+    int age =20;
 
-class Main {
-    void ifElse(){
-        int age=18;
-        if(age<=8)
-        {
-            System.out.println("you are the  voting  ");
-        }
-        else{
-            System.out.println("your are not voting ");
-        }
+    static void show(){
+        System.out.println("static method without call the run ");
     }
+
     public static void main (String args[])
     {
-        Main ifelse=new Main();
-        ifelse.ifElse();
-        int a=20;
-        int b=20;
-        if(a==b)
-        {
-            System.out.println("a and b both are equal");
-        }
+        System.out.println("Main method is call");
+        Main k=new Main();
+        System.out.println("your name is :"+k.name);
+        System.out.println("your age is:"+k.age);
+        show(); // not using the main method
+        
     }
 }
