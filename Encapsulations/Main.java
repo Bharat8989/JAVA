@@ -18,9 +18,10 @@ public class Main {
         Main1 kk = new Main1();
 
         // Setting the name
-        kk.setName("Bharat");
+        kk.setName("Bharat Kadam");
 
         // Getting and displaying the name
         System.out.println("Your name is: " + kk.getName());
     }
-}
+} 
+// encapsulations
