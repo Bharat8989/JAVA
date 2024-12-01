@@ -1,18 +1,37 @@
-// constructor
-// there are two types of constructor i)default constructor ii)no parameter constructor ii)parameterize constructor 
-// same name as the class name 
-// constructor is no return vales 
-class Main {
-    int a;
-    String name;
-    // no parameter constructor
-    Main(int age,String b)
+// 
+// Object & Class
+// Inheritance
+// Polymorphism
+// Abstraction
+// Encapsulation
+/* inheritance there are main 3 types of i single ii)multiLever iii 
+ * Single level
+Multi-level
+Hierarchical
+Multiple
+Hybrid
+multiple and hybrid are both not using the in java 
+it use to 
+  */
+//   single multiLever hierarchical
+  class A{
+    public void showA()
     {
-        System.out.println("no parameter constructor");
+        System.out.println("A method run");
     }
-    public static void main (String args[])
+  }
+  class B extends A{
+    public void showB()
     {
-        Main kk=new Main(10,"bharat");
-        System.out.println("the vale of a:"+kk.a  + " and your name is:"+kk.name);
+        System.out.println("B method run");
     }
-}
+  }
+  class Main extends A{
+    public static void main(String[] args) {
+        Main kk=new Main();
+        B kkkk=new B();
+        kkkk.showB();
+        kk.showA();
+        // kk.showB();
+    }
+  }
