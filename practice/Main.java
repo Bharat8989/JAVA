@@ -82,17 +82,52 @@ it use to
 //     }
 // }
 // abstract
-abstract class Animal{
-    public abstract void showA();
-}
-class Main extends Animal{
-    public void showA(){
-        System.out.println("show a method for abstract method ");
+// abstract class Animal{
+//     public abstract void showA();
+// }
+// class Main extends Animal{
+//     public void showA(){
+//         System.out.println("show a method for abstract method ");
 
-    }
-    public static void main (String args[])
-    {
-        Main kk=new Main();
-        kk.showA();
+//     }
+//     public static void main (String args[])
+//     {
+//         Main kk=new Main();
+//         kk.showA();
+//     }
+// }
+
+// lang packages
+// class Main {
+//     public static void main (String args [])
+//     {
+//         double squareRoot=Math.sqrt(25);
+//         System.out.println("square root of 25:"+squareRoot);
+//     }
+// }
+// import java.util.Scanner;
+// import java.util.jar.Attributes.Name;
+// class Main {
+//     public static void main(String[] args) {
+        
+//         System.out.println("enter your name :");
+//         Scanner sc=new Scanner(System.in);
+//         String name=sc.nextLine();
+//         System.out.println("your name is:"+name);
+//     }
+// }
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Frame frame = new Frame("AWT Example");
+        Button button = new Button("Click Me!");
+
+        button.setBounds(50, 100, 80, 30); // Set button position
+        frame.add(button); // Add button to frame
+
+        frame.setSize(300, 200); // Set frame size
+        frame.setLayout(null);   // Disable default layout
+        frame.setVisible(true);  // Make frame visible
     }
 }
