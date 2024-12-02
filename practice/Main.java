@@ -116,18 +116,42 @@ it use to
 //         System.out.println("your name is:"+name);
 //     }
 // }
-import java.awt.*;
+// import java.awt.*;
 
-public class Main {
+// public class Main {
+//     public static void main(String[] args) {
+//         Frame frame = new Frame("AWT Example");
+//         Button button = new Button("Click Me!");
+
+//         button.setBounds(50, 100, 80, 30); // Set button position
+//         frame.add(button); // Add button to frame
+
+//         frame.setSize(300, 200); // Set frame size
+//         frame.setLayout(null);   // Disable default layout
+//         frame.setVisible(true);  // Make frame visible
+//     }
+// }
+
+
+import java.io.*;
+
+class Main {
     public static void main(String[] args) {
-        Frame frame = new Frame("AWT Example");
-        Button button = new Button("Click Me!");
+        String inputFile = "input.txt";
+        String outputFile = "output.txt";
 
-        button.setBounds(50, 100, 80, 30); // Set button position
-        frame.add(button); // Add button to frame
-
-        frame.setSize(300, 200); // Set frame size
-        frame.setLayout(null);   // Disable default layout
-        frame.setVisible(true);  // Make frame visible
+        try (
+            BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))
+        ) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                writer.write(line);
+                writer.newLine();
+            }
+            System.out.println("Files copied successfully.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
