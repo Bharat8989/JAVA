@@ -102,7 +102,7 @@
 //         kk.showB();
 //     }
 // }
-// Hierarchical method 
+// Hierarchical 
 class Main1{
     void showA()
     {
@@ -111,7 +111,7 @@ class Main1{
 }
 class Main2 extends Main1 {
 
-    void showB(){
+    void showB(){ 
         
     }
 }
