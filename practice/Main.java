@@ -49,18 +49,18 @@
 
 
 //nested loop 
-public class Main {
+// public class Main {
 
-    public static void main(String args[])
-    {
-        for(int i=2;i<=3;i++)
-        for(int j=2;j<=4;j++)
-        {
-            System.out.println(i+" * "+j+" = "+i*j);
-        }
-        System.out.println();
-    }
-}
+//     public static void main(String args[])
+//     {
+//         for(int i=2;i<=3;i++)
+//         for(int j=2;j<=4;j++)
+//         {
+//             System.out.println(i+" * "+j+" = "+i*j);
+//         }
+//         System.out.println();
+//     }
+// }
 
 
 // lang packages
@@ -122,3 +122,34 @@ public class Main {
 //     }
 // }
 // what is 
+
+/*Write a program in java to create output.txt file using some 
+ content in input.txt file. */
+
+
+ import java.io.*;
+
+ class Main {
+    public static void main(String args[])
+    {
+        String inputFile="input.txt";
+        String outputFile="output.txt";
+        try(BufferedReader reader=new BufferedReader(new FileReader(inputFile)));
+        BufferedWriter writer=new BufferedWriter(new FileWriter(outputFile))
+        {
+            String line;
+            while((line=reader.readLine())!=null)
+            {
+                writer.write(line);
+                writer.newLine();
+            }
+            System.out.println("file are copied");
+        }
+        catch(IOException e)
+        {
+        e.printStackTrace();
+        }
+    }
+ }
+
+
