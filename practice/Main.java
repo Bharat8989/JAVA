@@ -48,6 +48,76 @@
 // }
 
 
+// Object & Class
+// Inheritance
+// Polymorphism
+// Abstraction
+// Encapsulation
+// object and class 
+
+// class Main {
+//     public void show()
+//     {
+//         System.out.println("show method run");
+//     }
+    
+
+//     public static void main(String args[])
+//     {
+//         int a=20;
+//         System.out.println("the value of a:"+a);
+//         Main kk=new Main();
+        
+//         kk.show();
+//     }
+// }
+
+//   Inheritance
+//there are three types of inheritance
+//single  Inheritance ii multiLever  Inheritance iii Hierarchical
+// Multiple
+// Hybrid
+
+
+// 
+// Multiple
+// Hybrid
+//  single 
+// class Main1{
+//     public void showA(){
+//         System.out.println("A method show ");
+
+//     }
+// }
+// class Main2 extends Main1{
+//     public void showB(){
+//         System.out.println("B method show ");
+
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Main2 kk=new Main2();
+//         kk.showA();
+//         kk.showB();
+//     }
+// }
+// Hierarchical method 
+class Main1{
+    void showA()
+    {
+        System.out.println("show a method ");
+    }
+}
+class Main2 extends Main1 {
+
+    void showB(){
+        
+    }
+}
+
+
+
 //nested loop 
 // public class Main {
 
@@ -61,6 +131,7 @@
 //         System.out.println();
 //     }
 // }
+
 
 
 // lang packages
@@ -153,19 +224,19 @@
 //  }
 
 
-public class Main {
+// public class Main {
 
-    public static void main(String args[])
-    {
+//     public static void main(String args[])
+//     {
        
        
-            Thread thread =new Thread(new Runnable(){
-                @Override
-                public void run(){
-                    System.out.println("run method run ");
+//             Thread thread =new Thread(new Runnable(){
+//                 @Override
+//                 public void run(){
+//                     System.out.println("run method run ");
 
-                }
-            });
-            thread.start();
-    }
-}
+//                 }
+//             });
+//             thread.start();
+//     }
+// }
