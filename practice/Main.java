@@ -127,29 +127,45 @@
  content in input.txt file. */
 
 
- import java.io.*;
+//  import java.io.*;
 
- class Main {
+//  class Main {
+//     public static void main(String args[])
+//     {
+//         String inputFile="input.txt";
+//         String outputFile="output.txt";
+//         try(BufferedReader reader=new BufferedReader(new FileReader(inputFile));
+//         BufferedWriter writer=new BufferedWriter(new FileWriter(outputFile)))
+//         {
+//             String line;
+//             while((line=reader.readLine())!=null)
+//             {
+//                 writer.write(line);
+//                 writer.newLine();
+//             }
+//             System.out.println("file are copied");
+//         }
+//         catch(IOException e)
+//         {
+//         e.printStackTrace();
+//         }
+//     }
+//  }
+
+
+public class Main {
+
     public static void main(String args[])
     {
-        String inputFile="input.txt";
-        String outputFile="output.txt";
-        try(BufferedReader reader=new BufferedReader(new FileReader(inputFile)));
-        BufferedWriter writer=new BufferedWriter(new FileWriter(outputFile))
-        {
-            String line;
-            while((line=reader.readLine())!=null)
-            {
-                writer.write(line);
-                writer.newLine();
-            }
-            System.out.println("file are copied");
-        }
-        catch(IOException e)
-        {
-        e.printStackTrace();
-        }
+       
+       
+            Thread thread =new Thread(new Runnable(){
+                @Override
+                public void run(){
+                    System.out.println("run method run ");
+
+                }
+            });
+            thread.start();
     }
- }
-
-
+}
