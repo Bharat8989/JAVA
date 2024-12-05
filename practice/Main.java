@@ -103,19 +103,68 @@
 //     }
 // }
 // Hierarchical 
-class Main1{
-    void showA()
-    {
-        System.out.println("show a method ");
-    }
-}
-class Main2 extends Main1 {
+// class Main1{
+//     void showA()
+//     {
+//         System.out.println("show a method ");
+//     }
+// }
+// class Main2 extends Main1 {
 
-    void showB(){ 
+//     void showB(){ 
         
+//     }
+// }
+
+//abstract
+// abstract class Animal{
+//     public abstract void showA();
+//     public void run(){
+//         System.out.println("show the A method");
+
+//     }
+// }
+// class Animal1 extends Animal{
+//     public void showA(){
+//         System.out.println("animal 1 method run");
+
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Animal1 kk=new Animal1();
+//         kk.showA();
+//         kk.run();
+//     }
+// }
+
+// Encapsulation
+
+class Animal {
+    private String carColor; // Private field to store the car color
+
+    // Setter method to set the car color
+    public void setColor(String color) {
+        carColor = color;
+    }
+
+    // Getter method to retrieve the car color
+    public String getColor() {
+        return carColor;
     }
 }
 
+public class Main {
+    public static void main(String[] args) {
+        Animal kk = new Animal(); // Creating an object of Animal class
+
+        // Setting the car color
+        kk.setColor("red");
+
+        // Getting and printing the car color
+        System.out.println("Car color is: " + kk.getColor());
+    }
+}
 
 
 //nested loop 
