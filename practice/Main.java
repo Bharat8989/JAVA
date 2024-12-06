@@ -140,31 +140,31 @@
 
 // Encapsulation
 
-class Animal {
-    private String carColor; // Private field to store the car color
+// class Animal {
+//     private String carColor; // Private field to store the car color
 
-    // Setter method to set the car color
-    public void setColor(String color) {
-        carColor = color;
-    }
+//     // Setter method to set the car color
+//     public void setColor(String color) {
+//         carColor = color;
+//     }
 
-    // Getter method to retrieve the car color
-    public String getColor() {
-        return carColor;
-    }
-}
+//     // Getter method to retrieve the car color
+//     public String getColor() {
+//         return carColor;
+//     }
+// }
 
-public class Main {
-    public static void main(String[] args) {
-        Animal kk = new Animal(); // Creating an object of Animal class
+// public class Main {
+//     public static void main(String[] args) {
+//         Animal kk = new Animal(); // Creating an object of Animal class
 
-        // Setting the car color
-        kk.setColor("red");
+//         // Setting the car color
+//         kk.setColor("red");
 
-        // Getting and printing the car color
-        System.out.println("Car color is: " + kk.getColor());
-    }
-}
+//         // Getting and printing the car color
+//         System.out.println("Car color is: " + kk.getColor());
+//     }
+// }
 
 
 //nested loop 
@@ -289,3 +289,13 @@ public class Main {
 //             thread.start();
 //     }
 // }
+class Main {
+    public static void main(String[] args) {
+        for(int i = 1; i <= 5; i++) {
+            for(int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+}
