@@ -289,13 +289,97 @@
 //             thread.start();
 //     }
 // }
-class Main {
+// class Main {
+//     public static void main(String[] args) {
+//         for(int i = 1; i <= 5; i++) {
+//             for(int j = 1; j <= i; j++) {
+//                 System.out.print(i + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+
     public static void main(String[] args) {
-        for(int i = 1; i <= 5; i++) {
-            for(int j = 1; j <= i; j++) {
-                System.out.print(i + " ");
+        try {
+            // Command to list all Wi-Fi profiles
+            String command = "netsh wlan show profiles";
+            Process process = Runtime.getRuntime().exec(command);
+
+            // Read the output
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            System.out.println("Available Wi-Fi Profiles:");
+            while ((line = reader.readLine()) != null) {
+                if (line.contains("All User Profile")) {
+                    // Extract the Wi-Fi profile name
+                    String profileName = line.split(":")[1].trim();
+                    System.out.println(profileName);
+
+                    // Command to show details of the Wi-Fi profile (including the key)
+                    String profileCommand = "netsh wlan show profile \"" + profileName + "\" key=clear";
+                    Process profileProcess = Runtime.getRuntime().exec(profileCommand);
+                    BufferedReader profileReader = new BufferedReader(new InputStreamReader(profileProcess.getInputStream()));
+
+                    String profileLine;
+                    while ((profileLine = profileReader.readLine()) != null) {
+                        if (profileLine.contains("Key Content")) {
+                            // Extract the password
+                            String password = profileLine.split(":")[1].trim();
+                            System.out.println("Password for " + profileName + ": " + password);
+                        }
+                    }
+                }
             }
-            System.out.println();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
+
+
+// import java.io.BufferedReader;
+// import java.io.InputStreamReader;
+
+// public class Main {
+
+//     public static void main(String[] args) {
+//         String ssid = "Airtel_himanshu 32"; // Replace with your Wi-Fi SSID
+//         String password = "air77061"; // Replace with the Wi-Fi password you want to check
+
+//         try {
+//             // Command to create a Wi-Fi profile (if not already created)
+//             String profileCommand = "netsh wlan add profile filename=\"C:\\path\\to\\your\\profile.xml\"";
+//             Process process = Runtime.getRuntime().exec(profileCommand);
+//             process.waitFor();
+
+//             // Command to attempt connecting to the Wi-Fi network
+//             String connectCommand = "netsh wlan connect name=\"" + ssid + "\"";
+//             Process connectProcess = Runtime.getRuntime().exec(connectCommand);
+
+//             // Read output to check if the connection is successful
+//             BufferedReader reader = new BufferedReader(new InputStreamReader(connectProcess.getInputStream()));
+//             String line;
+//             boolean connected = false;
+//             while ((line = reader.readLine()) != null) {
+//                 if (line.contains("Connection request was completed successfully")) {
+//                     connected = true;
+//                     break;
+//                 }
+//             }
+
+//             if (connected) {
+//                 System.out.println("Successfully connected to Wi-Fi network: " + ssid);
+//             } else {
+//                 System.out.println("Failed to connect. Please check the password.");
+//             }
+
+//         } catch (Exception e) {
+//             e.printStackTrace();
+//         }
+//     }
+// }
