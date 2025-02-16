@@ -10,22 +10,24 @@ class Loop {
         Scanner sc=new Scanner(System.in);
     System.out.println("enter any natural number:");
     int n=sc.nextInt();
-       
-    boolean isPrime=n>1;
-    for(int i=2;i*i<=n;i++)
-    {
-        if(n%i==0){
-           isPrime=false;
-        }
-       
-    }
-    if (isPrime) {
-        System.out.println(n +" is a prime number");
+    int reversed=0;
+    int original=n;
 
-        
+    while(n>0){
+        reversed=reversed*10+n%10;
+        n=n/10;
+
+
+    }
+    if(original==reversed){
+        System.out.println(original+" is a palindrome");
     }
     else{
-        System.out.println(n + " is not a prime number");
+        System.out.println(original+" is not a palindrome");
     }
+
+   
+    
 }
+
 }
