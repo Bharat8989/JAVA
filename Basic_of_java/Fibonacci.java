@@ -17,6 +17,6 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         Fibonacci obj = new Fibonacci();
-        obj.printFibonacci(2); // Print first 10 Fibonacci numbers
+        obj.printFibonacci(5); // Print first 10 Fibonacci numbers
     }
 }
