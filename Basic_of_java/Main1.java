@@ -2,8 +2,11 @@ package Basic_of_java;
 class Main1 {
     public static void main(String args[])
     {
-        int[][] matrix = {{1, 2,5}, {3, 4,6},{25,21,10}};
-        System.out.println(matrix[2][2]); // 4
-
+        String s1 = "hello";
+        String s2 = new String("hello");
+        
+        System.out.println(s1 == s2);      // false (Different memory references)
+        System.out.println(s1.equals(s2)); // true (Same value)
+        
     }
 }
