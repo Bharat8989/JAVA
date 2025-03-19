@@ -1,25 +1,23 @@
 package Basic_of_java;
 
 class Binary {
-    void BinaryNumber(int num){
+    void DecimalNumber1(int DecimalNumber)
+    {
+        int ans =0;
         int pos=1;
-        int ans=0;
-        // int num;
-        while ( num > 0) {
-
-           int  rem=num%10;
-        //    num=num/2;
-            num=num/10;
-           ans=ans+rem * pos;
-           
-           pos=pos * 2;
+        while(DecimalNumber> 0)
+        {
+            int rem=DecimalNumber%2;
+            DecimalNumber=DecimalNumber/2;
+            ans=ans+ (rem * pos);
+            pos=pos*10;
 
         }
-        System.out.println("binary number:" +ans);
+        System.out.println("Binary1Number:"+ans);
     }
-    public static void main (String args[])
+    public static void main(String args[])
     {
         Binary obj=new Binary();
-        obj.BinaryNumber(1001);
+        obj.DecimalNumber1(10);
     }
 }
