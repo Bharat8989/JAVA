@@ -9,11 +9,16 @@ class Dog extends Animal {
         System.out.println("Dog barks.");
     }
 }
-
+class Cat extends Dog{
+    void eat(int a){
+        System.out.println("cat is eats for the food");
+    }
+}
 public class Main {
     public static void main(String[] args) {
-        Dog d = new Dog();
+        Cat d = new Cat();
         d.eat();   // Inherited method
         d.bark();  // Own method
+        d.eat(23);
     }
 }
