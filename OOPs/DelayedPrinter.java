@@ -5,7 +5,7 @@ public class DelayedPrinter {
            try {
             Thread.sleep(10000);
            } catch (Exception e) {
-            // TODO: handle exception
+           
             System.out.println("not correct this ");
            }
         }
