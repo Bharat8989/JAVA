@@ -1,24 +1,27 @@
-class Animal {
-    void eat() {
-        System.out.println("This animal eats food.");
-    }
-}
+interface A
+{
 
-class Dog extends Animal {
-    void bark() {
-        System.out.println("Dog barks.");
+    void show();
+}
+class Animal{
+    void showA(){
+        System.out.println("show A method call");
     }
 }
-class Cat extends Dog{
-    void eat(int a){
-        System.out.println("cat is eats for the food");
+class Cat extends Animal implements A{
+    void showB(){
+        System.out.println("show B method call");
+    }
+    public void show(){
+        System.out.println("show interface method ");
     }
 }
-public class Main {
-    public static void main(String[] args) {
-        Cat d = new Cat();
-        d.eat();   // Inherited method
-        d.bark();  // Own method
-        d.eat(23);
+class Main {
+    public static void main(String args[])
+    {
+        Cat c=new Cat();
+        c.show();
+        c.showA();
+        c.showB();
     }
 }
