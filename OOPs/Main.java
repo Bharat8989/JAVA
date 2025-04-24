@@ -1,27 +1,29 @@
-interface A
-{
+//polymorphism 
+/* same name ,different behavior polymorphism come form greek world poly manes many and morph forms
+ * there are two types of polymorphism.
+ * compile time polymorphism (it is know as method overloading )
+ * same method name ,different number or types of parameters.
+ * 
+ */
+//same name but different parameter
+//run time polymorphism (method overriding )
 
-    void show();
-}
 class Animal{
-    void showA(){
-        System.out.println("show A method call");
+    void sound(){
+        System.out.println("animal method call");
     }
 }
-class Cat extends Animal implements A{
-    void showB(){
-        System.out.println("show B method call");
-    }
-    public void show(){
-        System.out.println("show interface method ");
+class Dog extends Animal{
+    void sound(){
+        System.out.println("dog barks");
     }
 }
 class Main {
     public static void main(String args[])
     {
-        Cat c=new Cat();
-        c.show();
-        c.showA();
-        c.showB();
+        Animal a=new Dog();
+        a.sound();//out put is dog barks
+        a=new Animal();
+        a.sound();
     }
 }
