@@ -1,23 +1,37 @@
-// if statement execute a block of code only if the conditions is true.
-//write a program to check if a number is positive
+//switch statement
+//days of the week
 
-//  Check if a person is eligible to vote
-class PositiveCheck {
+class PositiveCheck{
     public static void main(String args[])
     {
-        //nested if statements
-      // check if a character is a vowel
-    //   char[] ch={'a','e','i','o','u'};
-    char ch='k';
-      if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-
-      {
-
-        System.out.println(ch+ "  is the character is a vowel");
-      }
-      else {
-        System.out.println("not a vowel");
-      }
+        int day =3;
+        switch (day) {
+            case 1:
+            System.out.println("Monday");
+                
+                break;
+                case 2:
+                System.out.println("Tuesday");
+                break;
+        
+                case 3:
+                System.out.println("Wednesday");
+                break;
+                case 4:
+                System.out.println("Thursday");
+                break;
+                case 5:
+                System.out.println("Friday");
+                break;
+                case 6:
+                System.out.println("Saturday");
+                break;
+                case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+            System.out.println("invalid input. Please enter a number between 1 and 7");
+                break;
+        }
     }
-
 }
