@@ -23,7 +23,7 @@ class Main {
     {
         Animal a=new Dog();
         a.sound();//out put is dog barks
-        a=new Animal();
+        // a=new Animal();
         a.sound();
     }
 }

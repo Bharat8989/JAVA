@@ -36,7 +36,7 @@ class Student
     }
 
 }
-class Main{
+class Main1{
     public static void main(String args[])
     {
         Student s=new Student("bharat",34);
