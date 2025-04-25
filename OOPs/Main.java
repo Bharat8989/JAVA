@@ -1,29 +1,33 @@
-//polymorphism 
-/* same name ,different behavior polymorphism come form greek world poly manes many and morph forms
- * there are two types of polymorphism.
- * compile time polymorphism (it is know as method overloading )
- * same method name ,different number or types of parameters.
+/* 1 Inheritance
+ * 2 Multi-level Inheritance
+ * 3 Hierarchical Inheritance
+ * 4 Hybrid inheritances
+ * 5 multiple inheritances
  * 
  */
-//same name but different parameter
-//run time polymorphism (method overriding )
+interface A{
+    void showA();
 
-class Animal{
-    void sound(){
-        System.out.println("animal method call");
-    }
+} 
+interface B
+{
+    void showB();
 }
-class Dog extends Animal{
-    void sound(){
-        System.out.println("dog barks");
+class C implements A, B{
+    public void showA(){
+        System.out.println("show A method run ");
+    }
+   public void showB(){
+        System.out.println("show B method run ");
     }
 }
 class Main {
-    public static void main(String args[])
+    public static void main (String args[])
     {
-        Animal a=new Dog();
-        a.sound();//out put is dog barks
-        // a=new Animal();
-        a.sound();
+        C b=new C();
+        b.showA();
+       
+        b.showB();
     }
 }
+

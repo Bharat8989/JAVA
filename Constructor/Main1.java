@@ -20,11 +20,11 @@
 //         Student s=new Student();
 //     }
 // }
-class Student 
+class Student12
 {
     String name;
         int roll;
-    Student(String n,int a)
+    Student12(String n,int a)
     {
         name=n;
         roll=a;
@@ -39,7 +39,7 @@ class Student
 class Main1{
     public static void main(String args[])
     {
-        Student s=new Student("bharat",34);
+        Student12 s=new Student12("bharat",34);
         s.display();
     }
 }
