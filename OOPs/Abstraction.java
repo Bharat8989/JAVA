@@ -2,23 +2,22 @@
  * hiding internal details and showing only essentials
  * Abstractions is achieved using 
  */
-abstract class Animal {
-    abstract void sound();
-    void sleep()
-    {
-        System.out.println("animal sleeps");
+
+ abstract class A{
+    abstract void show();
+    void showB(){
+        System.out.println("show B method run ");
     }
-}
-class Dog extends Animal{
-    void sound(){
-        System.out.println("dog barks");
+ }
+ class B extends A{
+    public void show(){
+        System.out.println("show method run ");
     }
-}
-public class Abstraction{
-    public static void main(String args[])
-    {
-        Dog d=new Dog();
-        d.sleep();
-        d.sound();
+ }
+ class Abstraction {
+    public static void main(String args[]){
+    B b=new B();
+    b.show();
+    b.showB();
     }
-}
+ }

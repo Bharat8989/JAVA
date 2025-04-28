@@ -5,21 +5,32 @@
  * Run time (Overriding ) same method in subclass
  * 
  */
-class Math{
-    void add(int a,int b)
-    {
-        System.out.println(a+b);
-    }
-    void add(double c,double d)
-    {
-        System.out.println(c+d);
+class Cat{
+    void sound(){
+        System.out.println("cat meows");
     }
 }
-public class Polymorphism{
-    public static void main (String args)
+class Dog extends Cat{
+    void sound(){
+        System.out.println("dog barks");
+
+    }
+}
+class Print extends Cat {
+    void sound(){
+        System.out.println("print class show");
+    }
+}
+class Polymorphism {
+    public static void main(String args[])
     {
-        Math m=new Math();
-        m.add(23, 43);
-        m.add(250, 0256);
+        Cat c;
+
+        c = new Dog();
+        c.sound();  // dog barks
+        
+        c = new Print();
+        c.sound();  // print class show
+        
     }
 }

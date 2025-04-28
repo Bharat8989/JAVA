@@ -5,20 +5,21 @@
  * using getters and setter to access them
  * 
  */
- 
-class Student {
-    private int rollNo;
-     void setRoll(int r){
-        rollNo=r;
+ class Student {
+    private int age;
+    public void setAge(int a){
+        age=a;
     }
-     int getRoll(){
-        return rollNo;
+    public int getAge(){
+        return age;
     }
-}
-class Encapsulation{
-    public static void main(String[] args) {
+
+ }
+ class Encapsulation{
+    public static void main(String args[])
+    {
         Student s=new Student();
-        s.setRoll(23);
-        System.out.println("roll number:"+s.getRoll());
+        s.setAge(23);
+        System.out.println(s.getAge());
     }
-}
+ }
