@@ -20,26 +20,23 @@
 //         Student s=new Student();
 //     }
 // }
-class Student12
-{
-    String name;
-        int roll;
-    Student12(String n,int a)
-    {
-        name=n;
-        roll=a;
+//default Constructor
+
+//parameterize constructor
+//constructor overloading
+
+class Student {
+    Student(){
+        System.out.println("default constructor");
 
     }
-    void display(){
+    Student(String name){
         System.out.println("name:"+name);
-        System.out.println("roll:"+roll);
     }
-
 }
 class Main1{
-    public static void main(String args[])
-    {
-        Student12 s=new Student12("bharat",34);
-        s.display();
+    public static void main(String args[]){
+        Student s=new Student();
+        Student s2=new Student("bharat");
     }
 }

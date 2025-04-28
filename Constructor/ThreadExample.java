@@ -1,14 +1,12 @@
 class MyThread extends Thread{
     public void run(){
-        System.out.println("thread running ");
+        System.out.println("Thread in running ");
     }
 }
-class ThreadExample{
-     public static void main(String args[])
+class ThreadExample {
+    public static void main (String args[])
     {
-        MyThread t=new MyThread();
-        // t.Show();
-        t.start();
+        MyThread my=new MyThread();
+        my.start();
     }
-    
 }
