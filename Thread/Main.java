@@ -1,12 +1,17 @@
 class Main {
-    public static void main(String args[]){
-        int rows=4;
-        for(int i=1;i<=rows;i++){
-            for(int j=1;j<=rows;j++)
-            {
-                System.out.print("* ");
+    public static void main(String[] args) {
+        // nested if else
+        int age = 19;
+        int weight = 45;
+
+        if (age >= 18) {
+            if (weight >= 50) {
+                System.out.println("You can donate the blood.");
+            } else {
+                System.out.println("You cannot donate blood due to weight.");
             }
-            System.out.println();
+        } else {
+            System.out.println("You cannot donate blood due to age.");
         }
     }
 }
