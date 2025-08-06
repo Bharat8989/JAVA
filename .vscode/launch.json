@@ -1,0 +1,133 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Abstraction",
+            "request": "launch",
+            "mainClass": "Abstraction",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Array",
+            "request": "launch",
+            "mainClass": "Basic_of_java.Array",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Binary",
+            "request": "launch",
+            "mainClass": "Basic_of_java.Binary",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "Basic_of_java.Fibonacci",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Functions",
+            "request": "launch",
+            "mainClass": "Basic_of_java.Functions",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "If",
+            "request": "launch",
+            "mainClass": "Basic_of_java.If",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Loop",
+            "request": "launch",
+            "mainClass": "Basic_of_java.Loop",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Basic_of_java.Main",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Main1",
+            "request": "launch",
+            "mainClass": "Basic_of_java.Main1",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "Basic_of_java.Server",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "DelayedPrinter",
+            "request": "launch",
+            "mainClass": "DelayedPrinter",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Encapsulation",
+            "request": "launch",
+            "mainClass": "Encapsulation",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Loop(1)",
+            "request": "launch",
+            "mainClass": "Loop",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "Polymorphism",
+            "request": "launch",
+            "mainClass": "Polymorphism",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "PositiveCheck",
+            "request": "launch",
+            "mainClass": "PositiveCheck",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "ThreadExample",
+            "request": "launch",
+            "mainClass": "ThreadExample",
+            "projectName": "DSA_77514479"
+        }
+    ]
+}

@@ -7,31 +7,24 @@
 //multiple inheritance (via interface ) a class implements multiple interface 
 //hybrid inheritance :combination of two or more types multiple and single inheritance
 
-interface A{
-    void showA();
+//types of Polymorphism 
+//compile time polymorphism :same method name with different parameters in the same class 
 
-}
-interface B{
-    void showB();
-}
-class C implements A,B{
-    public void showA(){
-        System.out.println("show a method ");
-    }
-    public void showB(){
-        System.out.println("show b method");
+//runtime polymorphism (method overriding ) : subclass provide a specific 
+
+class A {
+    void show(){
+        System.out.println("hello show A");
     }
 }
-class D extends C{
-    void showD(){
-        System.out.println("show d Method ");
+class B extends A{
+    void show(){
+        System.out.println("hello show B");
     }
 }
-public class Main {
-    public static void main (String args[]){
-        D obj=new D();
-        obj.showA();
-        obj.showB();
-        obj.showD();
+class Main {
+    public static void main(String args[]){
+       A obj=new B();
+        obj.show();
     }
 }

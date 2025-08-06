@@ -1,5 +1,5 @@
 /* Abstractions
- * hiding internal details and showing only essentials
+ * hiding  details and showing only essentials
  * Abstractions is achieved using 
  */
 
@@ -11,7 +11,7 @@
  }
  class B extends A{
     public void show(){
-        System.out.println("show method run ");
+        System.out.println("show method  ");
     }
  }
  class Abstraction {
