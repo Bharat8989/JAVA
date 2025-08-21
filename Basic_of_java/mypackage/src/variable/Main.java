@@ -1,17 +1,17 @@
 package variable;
 class Main{
-    int a=12;// global variable 
-    static String name="Bharat";
+    int a=10; //local variable 
+    static char Char='A';//static variable 
     void show(){
-        int c=23; // local variable
-        System.out.println("this is global variable:"+a);
-        System.out.println("this is local variable:"+c);
-        System.out.println("this is static variable:"+name);
+        int b=12; // instant / global variable 
+        System.out.println("sum of two number:"+ (a+b));
+        System.out.println("charter of :"+Char);
     }
     public static void main(String args[]){
-        // System.out.println("this is global variable : second"+a);
-        System.out.println("this is static variable second:"+name);
-        Main a=new Main();
-        a.show();
+        Main s=new Main();
+        s.show();
+        System.out.println("the value of a:"+Char);
+        // System.out.println(a);
+
     }
 }
