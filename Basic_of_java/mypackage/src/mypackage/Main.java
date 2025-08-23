@@ -33,6 +33,9 @@ public class Main {
         System.out.println("Enter your PI value:");
         pi = sc.nextFloat();
 
+        System.out.println("Enter any byte number : ");
+        byte number = sc.nextByte(); 
+
         // Output all values
         System.out.println("\n--- User Details ---");
         System.out.println("Name: " + name);
