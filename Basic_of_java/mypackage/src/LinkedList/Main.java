@@ -15,10 +15,10 @@ class SinglyLinkedList {
 
     Node head = null; // start of the list
 
-    // 1️⃣ Traversal - Display list
+    // 1️⃣ Traversal - Display 
     void display() {
         if (head == null) {
-            System.out.println("List is empty!");
+            System.out.println("List  empty!");
             return;
         }
         Node current = head;
