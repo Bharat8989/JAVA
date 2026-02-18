@@ -17,7 +17,7 @@ public class Practical4 {
                 result.append(encryptedChar);
                 j++;
             } else {
-                result.append(ch); // Keep spaces or symbols unchanged
+                result.append(ch);
             }
         }
         return result.toString();
@@ -46,10 +46,9 @@ public class Practical4 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String key = "LEMON";
 
         while (true) {
-            System.out.println("\n===== Polyalphabetic Cipher (Vigenere) =====");
+            System.out.println("\n===== Polyalphabetic Cipher =====");
             System.out.println("1. Encrypt");
             System.out.println("2. Decrypt");
             System.out.println("3. Exit");
@@ -59,22 +58,34 @@ public class Practical4 {
             sc.nextLine(); // consume newline
 
             if (choice == 1) {
+
                 System.out.print("Enter Plain Text: ");
                 String plainText = sc.nextLine();
+
+                System.out.print("Enter Key (Alphabets only): ");
+                String key = sc.nextLine();
+
                 String cipherText = encrypt(plainText, key);
                 System.out.println("Encrypted Text: " + cipherText);
 
             } else if (choice == 2) {
+
                 System.out.print("Enter Cipher Text: ");
                 String cipherText = sc.nextLine();
+
+                System.out.print("Enter Key (Alphabets only): ");
+                String key = sc.nextLine();
+
                 String plainText = decrypt(cipherText, key);
                 System.out.println("Decrypted Text: " + plainText);
 
             } else if (choice == 3) {
+
                 System.out.println("Exiting Program...");
                 break;
 
             } else {
+
                 System.out.println("Invalid Choice! Try Again.");
             }
         }
